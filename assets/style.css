@@ -7,13 +7,22 @@
 /* adjusting fonts */
 
 body {
-	font-family: -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
+	color: crimson;
+	font-family: Georgia;
 	transition: background 500ms ease;
 }
 
 p, li {
-	font-size:  22px;
-	line-height: 30px;
+	font-size:  18px;
+	line-height: 24px;
+}
+
+ul {
+	margin-bottom: 20px;
+}
+
+h3 {
+	margin-bottom: 5px;
 }
 
 /* adjusting spacing */
@@ -33,6 +42,14 @@ ul, ol {
 img {
 	max-width: 100%;
 	height:  auto;
+}
+
+a {
+	text-decoration-style: dotted;
+	color: crimson;
+}
+a:hover {
+	color: black;
 }
 
 /* uncomment the code below to set the grid */
