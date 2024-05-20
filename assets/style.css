@@ -6,9 +6,14 @@
 
 /* adjusting fonts */
 
+@font-face {
+    font-family: 'Asset';
+    src: url('../assets/Asset-Regular.ttf') format('truetype');
+}
+
 body {
-	color: crimson;
 	font-family: Georgia;
+	color: black;
 	transition: background 500ms ease;
 }
 
@@ -35,6 +40,15 @@ h1, p {
 	margin-bottom:  20px;
 }
 
+h1 {
+	color: crimson;
+	text-align: center;
+}
+
+h1:hover {
+	font-family: 'Asset';
+}
+
 ul, ol {
 	margin-left: 20px;
 }
@@ -46,10 +60,10 @@ img {
 
 a {
 	text-decoration-style: dotted;
-	color: crimson;
+	color: black;
 }
 a:hover {
-	color: black;
+	color: crimson;
 }
 
 /* uncomment the code below to set the grid */
