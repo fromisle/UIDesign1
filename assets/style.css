@@ -158,7 +158,6 @@ p {
     opacity: 1;
     transform: translate(-50%, -10px); /* 아래에서 위로 이동 */
 }
-
 .container {
 	width: 1080px;
 	height: 355px;
@@ -176,7 +175,7 @@ p {
 	text-decoration: none; /* 기본 링크 스타일 제거 */
 	color: inherit; /* 링크 색상 상속 */
 }
-.column:hover, .column-3 .row:hover {
+.column:hover {
 	background-color: black;
 	color: white;
 	cursor: pointer;
@@ -203,7 +202,7 @@ p {
 	gap: 10px;
 	border: none; /* 테두리 제거 */
 }
-.column-3 .row {
+.row {
 	flex: 1;
 	width: 100%; /* column-3을 꽉 채우게 함 */
 	background-color: white;
@@ -215,12 +214,12 @@ p {
 	text-decoration: none; /* 기본 링크 스타일 제거 */
 	color: inherit; /* 링크 색상 상속 */
 }
-.column-3 .row:hover {
+.row:hover {
 	background-color: black;
 	color: white;
 	cursor: pointer;
 }
-.column-3 .row h3 {
+.row h3 {
 	margin: 23px 40px;
 	text-align: left; /* 텍스트 왼쪽 정렬 */
 }
