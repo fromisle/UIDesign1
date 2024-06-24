@@ -21,7 +21,7 @@ body, html {
 
 .section#section1 {
     justify-content: flex-start; /* 위쪽 정렬 */
-    padding-top: 100px; /* 중앙에서 약간 위로 이동 */
+    padding-top: 80px; /* 중앙에서 약간 위로 이동 */
 }
 
 .section#section2 {
@@ -46,12 +46,12 @@ button {
     font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
+    font-size: 16px;
     background-color: black;
     color: white;
     border: none;
     cursor: pointer;
-    width: 180px;
+    width: 160px;
     height: 50px;
 }
 
