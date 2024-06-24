@@ -24,6 +24,11 @@ body, html {
     padding-top: 100px; /* 중앙에서 약간 위로 이동 */
 }
 
+.section#section2 {
+    justify-content: flex-start; /* 위쪽 정렬 */
+    padding-top: 100px; /* 중앙에서 약간 위로 이동 */
+}
+
 .content {
     display: flex;
     flex-direction: column;
@@ -85,10 +90,6 @@ p {
 
 #section2 {
     background-color: white;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 100px; /* 왼쪽 여백 추가 */
 }
 
 /* 툴팁 스타일 설정 */
@@ -163,6 +164,7 @@ p {
 	height: 355px;
 	display: flex;
 	gap: 40px;
+	margin-top: 20px;
 }
 .column {
 	height: 355px;
