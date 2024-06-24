@@ -21,7 +21,7 @@ body, html {
 
 .section#section1 {
     justify-content: flex-start; /* 위쪽 정렬 */
-    padding-top: 150px; /* 중앙에서 약간 위로 이동 */
+    padding-top: 100px; /* 중앙에서 약간 위로 이동 */
 }
 
 .content {
@@ -141,4 +141,67 @@ p {
 
 .tooltip-trigger:hover::after {
     transform: scaleX(1);
+}
+
+/* 스크롤 버튼 스타일 */
+#scroll-button {
+    position: absolute;
+    bottom: 100px; /* 아래에서 100px */
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#scroll-button:hover {
+    opacity: 1;
+    transform: translate(-50%, -10px); /* 아래에서 위로 이동 */
+}
+
+.container {
+	width: 1080px;
+	height: 355px;
+	display: flex;
+	gap: 40px;
+}
+.column {
+	height: 355px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	border: 3px dashed black;
+}
+.column-1, .column-2 {
+	width: 230px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.column-1 h2, .column-2 h2 {
+	margin: 38px 0 10px 0;
+	text-align: center;
+}
+.column-1 h3, .column-2 h3 {
+	margin: 0;
+	text-align: center;
+}
+.column-3 {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.column-3 .row {
+	flex: 1;
+	background-color: white;
+	border: 3px dashed black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.column-3 .row h3 {
+	margin: 23px 40px;
+	text-align: center;
 }
