@@ -26,7 +26,7 @@ body, html {
 
 .section#section2 {
     justify-content: flex-start; /* 위쪽 정렬 */
-    padding-top: 100px; /* 중앙에서 약간 위로 이동 */
+    padding-top: 50px; /* 중앙에서 약간 위로 이동 */
 }
 
 .content {
