@@ -209,3 +209,9 @@ p {
 	margin: 23px 40px;
 	text-align: left; /* 텍스트 왼쪽 정렬 */
 }
+
+.contact {
+	margin-top: 100px;
+    bottom: 100px; /* 아래에서 100px */
+    left: 50%;
+}
