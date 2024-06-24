@@ -25,3 +25,20 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+// 스크롤 다운 //
+document.addEventListener("DOMContentLoaded", function() {
+    const scrollButton = document.getElementById('scroll-button');
+    
+    scrollButton.addEventListener('mouseover', function() {
+        this.src = 'assets/scroll-hover.png';
+    });
+    
+    scrollButton.addEventListener('mouseout', function() {
+        this.src = 'assets/scroll.png';
+    });
+    
+    scrollButton.addEventListener('click', function() {
+        document.getElementById('section2').scrollIntoView({ behavior: 'smooth' });
+    });
+});
