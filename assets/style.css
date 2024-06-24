@@ -158,13 +158,11 @@ p {
     opacity: 1;
     transform: translate(-50%, -10px); /* 아래에서 위로 이동 */
 }
-
 .container {
 	width: 1080px;
 	height: 355px;
 	display: flex;
 	gap: 40px;
-	margin-top: 20px;
 }
 .column {
 	height: 355px;
@@ -173,6 +171,12 @@ p {
 	align-items: center;
 	background-color: white;
 	border: 3px dashed black;
+	transition: background-color 0.3s, color 0.3s;
+}
+.column:hover, .column-3 .row:hover {
+	background-color: black;
+	color: white;
+	cursor: pointer;
 }
 .column-1, .column-2 {
 	width: 230px;
@@ -204,14 +208,14 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	transition: background-color 0.3s, color 0.3s;
 }
 .column-3 .row h3 {
 	margin: 23px 40px;
 	text-align: left; /* 텍스트 왼쪽 정렬 */
 }
-
 .contact {
 	margin-top: 100px;
-    bottom: 100px; /* 아래에서 100px */
-    left: 50%;
+	text-align: center;
+	font-size: 18px;
 }
