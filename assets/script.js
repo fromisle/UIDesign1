@@ -54,7 +54,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// dark mode toggle
-document.querySelector('#darkmode').addEventListener('click', function() {
-    document.getElementsByTagName('body')[0].classList.toggle('dark');
+document.addEventListener("DOMContentLoaded", function() {
+    const darkModeButton = document.getElementById('darkmode');
+    darkModeButton.addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+    });
 });

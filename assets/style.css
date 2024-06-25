@@ -8,6 +8,10 @@ body, html {
     background-color: white;
 }
 
+body {
+	transition: background-color 0.3s, color 0.3s;
+}
+
 .section {
     height: 100vh;
     display: flex;
@@ -233,6 +237,20 @@ a {
 	font-size: 18px;
 }
 
-body.dark {
-	background: #333;
-  }
+    /* Dark mode styles */
+        .dark-mode {
+            background-color: #333333;
+            color: white;
+        }
+        .dark-mode .column {
+            background-color: #333333;
+            border-color: white;
+        }
+        .dark-mode .column-3-item {
+            background-color: #333333;
+            border-color: white;
+        }
+        .dark-mode .column:hover, .dark-mode .column-3-item:hover {
+            background-color: white;
+            color: #333333;
+        }
