@@ -281,11 +281,13 @@ a {
     background-color: white;
 }
 
-
-/* 모바일 스타일 */
 @media (max-width: 600px) {
     .section {
         padding: 0 20px; /* 양옆 여백 최소 20px */
+    }
+
+    .section#section2 {
+        margin-top: 20px; /* 위쪽 margin 줄이기 */
     }
 
     h1 {
@@ -294,16 +296,17 @@ a {
 
     .container {
         width: 100%;
-        flex-direction: column;
+        flex-direction: row;
         gap: 20px;
     }
 
     .column-1, .column-2 {
         width: calc(50% - 10px); /* 20px의 gap을 두고 화면에 꽉 차도록 */
+        height: calc(50% - 10px); /* 정사각형 모양 */
     }
 
     .column-3-container {
-        width: calc(100% - 20px); /* p1, p2와 20px gap을 포함한 너비 */
+        width: calc(100% + 20px); /* column-1과 column-2의 너비에 20px 더하기 */
     }
 
     .column {
@@ -312,5 +315,9 @@ a {
 
     .column-3-item {
         width: 100%;
+    }
+
+    #section2 h2 {
+        font-size: 24px; /* Project archive 글씨 크기 줄이기 */
     }
 }
