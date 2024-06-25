@@ -17,77 +17,127 @@ body {
 	position: relative;
 }
 
-#triangle {
-	width: 0;
-	height: 0;
-	border-left: 75px solid transparent;
-	border-right: 75px solid transparent;
-	border-bottom: 150px solid yellow;
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	background-color: #fff;
+}
+
+.kirby {
+	top: 20%;
+	width: 290px;
+	height: 232px;
+	background-color: #FFF6FA;
 	position: absolute;
-	top: 203px;
+	border-radius: 50%;
+}
+
+.kirby {
+	&:before {
+		content: '';
+		width: 118%;
+		height: 24%;
+		background-color: #E1CFD7;
+		position: absolute;
+		bottom: -32%;
+		border-radius: 50%;
+		z-index: -2;
+		left: -7%;
+	}
+}
+
+.arm {
+	position: absolute;
+	top: 38%;
+	width: 100px;
+	height: 100px;
+	background-color: #FFF6FA;
+	border-radius: 50%;
+}
+.arm.left {
+	left: -40px;
+}
+.arm.right {
+	right: -40px;
+}
+.eye {
+	position: absolute;
+	top: 38%;
+	width: 20px;
+	height: 54px;
+	background-color: #BBA3FF;
+	border-radius: 50%;
+	border: 2px solid #ff69b4;
+}
+.eye.left {
+	left: 110px;
+}
+.eye.right {
+	right: 110px;
+}
+.eye::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 20px;
+	height: 40px;
+	background-color: #FF4DC3;
+	border-radius: 50%;
+	transform: translateX(-50%);
+}
+.eye::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 13px;
+	height: 21px;
+	background-color: white;
+	border-radius: 50%;
+	transform: translateX(-50%);
+}
+.blush {
+	position: absolute;
+	top: 60%;
+	width: 40px;
+	height: 25px;
+	background-color: #FFD5EE;
+	border-radius: 50%;
+}
+.blush.left {
 	left: 60px;
 }
-
-#square {
-	width: 150px;
-	height: 150px;
-	background: red;
-	top: 203px;
-	left: 270px;
+.blush.right {
+	right: 60px;
+}
+.mouth {
 	position: absolute;
-
-	/* uncomment to add keyframe animation */
-	/* animation: spin 2s infinite; */
-
+	top: 52%;
+	left: 50%;
+	width: 36px;
+	height: 40px;
+	color: #ff69b4;
+	border-radius: 50%;
+	border: 2px solid transparent;
+	border-bottom-color: currentColor;
+	transform: translateX(-50%);
 }
-
-#circle {
-	width: 150px;
-	height: 150px;
-	background: blue;
-	border-radius: 150px;
-	top: 203px;
-	left: 480px;
+.foot {
 	position: absolute;
+	top: 75%;
+	width: 134px;
+	height: 121px;
+	background-color: #FF4E4E;
+	border-radius: 50%;
+	z-index: -1;
 }
-
-#clip {
-	width: 150px;
-	height: 150px;
-	background: green;
-	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-	top: 203px;
-	left: 690px;
-	position: absolute;
-
-	/* uncomment for css transitions */
-	/* transition: all 400ms ease; */
+.foot.left {
+	left: 10px;
 }
-
-/* animations */
-
-/*
-#clip:hover {
-	transform: rotate(1200deg);
+.foot.right {
+	right: 10px;
 }
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-@keyframes move {
-  from {
-    transform: translateX(0px);
-  }
-  to {
-    transform: translateX(100px);
-  }
-}
-
-*/
