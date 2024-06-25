@@ -280,3 +280,37 @@ a {
 .dark-mode .tooltip-trigger::after {
     background-color: white;
 }
+
+
+/* 모바일 스타일 */
+@media (max-width: 600px) {
+    .section {
+        padding: 0 20px; /* 양옆 여백 최소 20px */
+    }
+
+    h1 {
+        font-size: 80px; /* 텍스트 사이즈 줄이기 */
+    }
+
+    .container {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .column-1, .column-2 {
+        width: calc(50% - 10px); /* 20px의 gap을 두고 화면에 꽉 차도록 */
+    }
+
+    .column-3-container {
+        width: calc(100% - 20px); /* p1, p2와 20px gap을 포함한 너비 */
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .column-3-item {
+        width: 100%;
+    }
+}
