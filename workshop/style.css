@@ -50,6 +50,7 @@ h3 {
     font-size: 20px;
     font-weight: 600;
     margin-top: 0;
+    margin-bottom: 5px;
 }
 
 p {
@@ -66,4 +67,13 @@ p {
 
 .icon {
     width: 14px;
+}
+
+.back-arrow {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
 }
