@@ -232,3 +232,7 @@ a {
 	text-align: center;
 	font-size: 18px;
 }
+
+body.dark {
+	background: #333;
+  }

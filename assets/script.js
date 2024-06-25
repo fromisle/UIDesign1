@@ -53,3 +53,8 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById('section2').scrollIntoView({ behavior: 'smooth' });
     });
 });
+
+// dark mode toggle
+document.querySelector('#darkmode').addEventListener('click', function() {
+    document.getElementsByTagName('body')[0].classList.toggle('dark');
+});
