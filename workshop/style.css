@@ -78,7 +78,7 @@ p {
     color: black;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 812px) {
     .box {
         width: 100%;
     }
