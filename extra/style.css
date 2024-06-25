@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    font-family: "Barlow Condensed", sans-serif;
+    overflow-y: auto;
 }
 
 .background-image {
@@ -10,7 +14,7 @@ body, html {
     background-position: center; /* 이미지가 중앙에 위치하도록 설정 */
     height: 100vh; /* 화면 전체 높이 설정 */
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     color: white;
     text-align: center;
@@ -19,4 +23,32 @@ body, html {
 
 h1, p {
     margin: 0;
+    user-select: text;
+}
+
+h1 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+h2 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 200;
+    font-size: 28px;
+    margin-bottom: 200px;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 40px;
+    width: 200px;
+    height: 80px;
+    color: black;
+    margin-top: 20px;
+}
+
+::selction {
+    background: red;
+    color: white;
 }
