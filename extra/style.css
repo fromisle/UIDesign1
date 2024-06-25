@@ -1,0 +1,22 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.background-image {
+    background-image: url('poster.jpg'); /* 이미지 경로를 여기에 입력하세요 */
+    background-size: cover; /* 이미지가 영역을 꽉 채우도록 설정 */
+    background-position: center; /* 이미지가 중앙에 위치하도록 설정 */
+    height: 100vh; /* 화면 전체 높이 설정 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+}
+
+h1, p {
+    margin: 0;
+}
