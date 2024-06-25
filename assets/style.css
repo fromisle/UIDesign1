@@ -247,6 +247,7 @@ a {
 	color: inherit; /* 링크 색상 상속 */
 }
 .contact {
+	position: relative;
 	margin-top: 100px;
 	text-align: center;
 	font-size: 12px;
