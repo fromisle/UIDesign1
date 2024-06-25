@@ -1,10 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+::-moz-selection {
+    background: #B60000;
+    color: #fff;
+ }
+ ::selection {
+    background: #B60000;
+    color: #fff;
+ }
 
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: "Barlow Condensed", sans-serif;
+    font-family: "Montserrat", sans-serif;
     overflow-y: auto;
 }
 
@@ -12,7 +22,6 @@ body, html {
     background-image: url('poster.jpg'); /* 이미지 경로를 여기에 입력하세요 */
     background-size: cover; /* 이미지가 영역을 꽉 채우도록 설정 */
     background-position: center; /* 이미지가 중앙에 위치하도록 설정 */
-    height: 100vh; /* 화면 전체 높이 설정 */
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -29,26 +38,52 @@ h1, p {
 h1 {
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 600;
-    font-size: 36px;
+    font-size: 128px;
+    margin-top: 30px;
+    margin-bottom: 150px;
 }
 
 h2 {
-    font-family: "Barlow Condensed", sans-serif;
     font-weight: 200;
     font-size: 28px;
     margin-bottom: 200px;
 }
 
-button {
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 40px;
-    width: 200px;
-    height: 80px;
-    color: black;
-    margin-top: 20px;
+.watch-now {
+    display: inline-block;
+    letter-spacing: 2px;
+    border: none;
+    color: white;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    font-size: 40px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    line-height: 1.5;
+    text-shadow: 2px 2px 6px gray; 
 }
 
-::selction {
-    background: red;
-    color: white;
+.watch-now::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 5px;
+    background-color: white; /* 하단 선 색상 */
+    transition: width 0.3s, left 0.3s; /* 애니메이션 속성 설정 */
+}
+
+.watch-now:hover::after {
+    width: 100%; /* 호버 시 하단 선의 길이 설정 */
+    left: 0; /* 호버 시 하단 선의 시작 위치 설정 */
+}
+
+
+a {
+	text-decoration: none; /* 링크 밑줄 제거 */
+	color: inherit; /* 링크 색상 상속 */
 }
