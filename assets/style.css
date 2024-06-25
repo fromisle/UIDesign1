@@ -244,7 +244,7 @@ a {
 
 /* 다크 모드 스타일 */
 .dark-mode {
-    background-color: #333333;
+    background-color: #141414;
     color: white;
 }
 
@@ -253,26 +253,26 @@ a {
 }
 
 .dark-mode .section#section1, .dark-mode .section#section2 {
-    background-color: #333333;
+    background-color: #141414;
 }
 
 .dark-mode .column {
-    background-color: #333333;
+    background-color: #141414;
     border-color: white;
 }
 
 .dark-mode .column-3-item {
-    background-color: #333333;
+    background-color: #141414;
     border-color: white;
 }
 
 .dark-mode .column:hover, .dark-mode .column-3-item:hover {
     background-color: white;
-    color: #333333;
+    color: #141414;
 }
 
 .dark-mode .tooltip {
-    background-color: #333333;
+    background-color: #141414;
     color: white;
     border-color: white;
 }
