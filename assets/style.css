@@ -169,7 +169,7 @@ p {
 }
 .container {
 	width: 1080px;
-	height: 355px;
+	height: auto;
 	display: flex;
 	gap: 40px;
 }
@@ -184,7 +184,7 @@ p {
 }
 
 .column {
-	height: 355px;
+	height: 425px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -368,7 +368,7 @@ a {
     }
 
 	.contact {
-		margin-top: 100px;
+		margin-top: 120px;
 		text-align: center;
 		font-size: 12px;
 	}	
