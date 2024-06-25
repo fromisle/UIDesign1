@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // 스크롤이 완료된 후 isScrolling을 false로 설정
             setTimeout(() => {
                 isScrolling = false;
-            }, 1000); // 스크롤 애니메이션 시간에 맞춰 조정
+            }, 1); // 스크롤 애니메이션 시간에 맞춰 조정
         }
     }
 
