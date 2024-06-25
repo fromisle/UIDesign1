@@ -5,8 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.classList.toggle('dark-mode');
         if (document.body.classList.contains('dark-mode')) {
             darkModeButton.textContent = 'LIGHT MODE';
+            darkModeButton.classList.add('light-mode');
         } else {
             darkModeButton.textContent = 'DARK MODE';
+            darkModeButton.classList.remove('light-mode');
         }
     });
 

@@ -59,6 +59,11 @@ button {
     height: 50px;
 }
 
+button.light-mode {
+    background-color: #d3d3d3; /* 연한 회색 */
+    color: black;
+}
+
 h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
