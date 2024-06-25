@@ -77,3 +77,9 @@ p {
     cursor: pointer;
     color: black;
 }
+
+@media (max-width: 600px) {
+    .box {
+        width: 100%;
+    }
+}
