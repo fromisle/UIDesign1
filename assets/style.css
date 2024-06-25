@@ -371,4 +371,12 @@ a {
 		text-align: center;
 		font-size: 12px;
 	}	
-}
+	    /* 모바일에서 툴팁 비활성화 */
+		.tooltip-trigger:hover .tooltip {
+			visibility: hidden;
+		}
+	
+		.tooltip-trigger::after {
+			content: none; /* 라인 애니메이션 제거 */
+		}
+	}
