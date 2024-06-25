@@ -291,7 +291,7 @@ a {
     background-color: white;
 }
 
-@media (max-width: 600px) {
+@media (max-device-width: 812px) {
     .section {
         padding: 0 20px; /* 양옆 여백 최소 20px */
     }
