@@ -19,6 +19,22 @@
         <div class="foot left"></div>
         <div class="foot right"></div>
     </div>
+	<div class="text">...I ate them all</div>
+	<script>
+        document.querySelector('.kirby').addEventListener('mouseenter', function() {
+            const mouth = document.querySelector('.mouth');
+            const text = document.querySelector('.text');
+            mouth.classList.add('open');
+            text.classList.add('animate');
+        });
+
+        document.querySelector('.kirby').addEventListener('mouseleave', function() {
+            const mouth = document.querySelector('.mouth');
+            const text = document.querySelector('.text');
+            mouth.classList.remove('open');
+            text.classList.remove('animate');
+        });
+    </script>
 </body>
 
 </html>
